@@ -1,11 +1,14 @@
-<?php include 'frontend/header.php'; ?>
+<?php 
+// Start YOURLS engine
+require_once( dirname(__FILE__).'/includes/load-yourls.php' );
+
+include 'frontend/header.php'; 
+
+?>
 
 <body>
 
 <?php
-	// Start YOURLS engine
-	require_once( dirname(__FILE__).'/includes/load-yourls.php' );
-
 	// URL of the public interface
 	$page = YOURLS_SITE . '/index.php' ;
 
@@ -95,7 +98,7 @@
 	</section>
 
     <script>
-	    var clipboard = new Clipboard('.short-url-button');
+	    var clipboard = new ClipboardJS('.short-url-button');
     </script>
 
 <?php else: ?>
