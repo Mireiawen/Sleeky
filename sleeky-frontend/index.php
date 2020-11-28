@@ -92,7 +92,6 @@ include 'frontend/header.php';
 				<section class="link-section">
 					<input type="text" class="short-url" disabled style="text-transform:none;" value="<?php echo $shorturl; ?>">
 					<button class="short-url-button noselect" data-clipboard-text="<?php echo $shorturl; ?>">Copy</button>
-					<span class="info">View info &amp; stats at <a href="<?php echo $shorturl; ?>+"><?php echo $url; ?>+</a></span>
 				</section>
 			</div>
 	</section>
